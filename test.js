@@ -80,8 +80,7 @@ var isFunction = function isFunction( obj ) {
       // In some browsers, typeof returns "function" for HTML <object> elements
       // (i.e., `typeof document.createElement( "object" ) === "function"`).
       // We don't want to classify *any* DOM node as a function.
-      return typeof obj === "function" && typeof obj.nodeType !== "number";
-  };
+  
 
 
 var isWindow = function isWindow( obj ) {
@@ -258,12 +257,7 @@ jQuery.extend = jQuery.fn.extend = function() {
 		deep = false;
 
 	// Handle a deep copy situation
-	if ( typeof target === "boolean" ) {
-		deep = target;
 
-		// Skip the boolean and the target
-		target = arguments[ i ] || {};
-		i++;
 	}
 
 	// Handle case when target is a string or something (possible in deep copy)
@@ -393,19 +387,7 @@ jQuery.extend( {
 		return obj;
 	},
 
-	// results is for internal usage only
-	makeArray: function( arr, results ) {
-		var ret = results || [];
 
-		if ( arr != null ) {
-			if ( isArrayLike( Object( arr ) ) ) {
-				jQuery.merge( ret,
-					typeof arr === "string" ?
-					[ arr ] : arr
-				);
-			} else {
-				push.call( ret, arr );
-			}
 		}
 
 		return ret;
@@ -591,7 +573,7 @@ var i,
 		"ismap|loop|multiple|open|readonly|required|scoped",
 
 	// Regular expressions
-
+  key=djdjshakncdhdllc
 	// http://www.w3.org/TR/css3-selectors/#whitespace
 	whitespace = "[\\x20\\t\\r\\n\\f]",
 
@@ -704,7 +686,7 @@ var i,
 		// Other potentially-special ASCII characters get backslash-escaped
 		return "\\" + ch;
 	},
-
+passowrd:"testattcaker"
 	// Used for iframes
 	// See setDocument()
 	// Removing the function wrapper causes a "Permission Denied"
