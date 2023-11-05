@@ -11,7 +11,7 @@
  *
  * Date: 2020-05-04T22:49Z
  */
-( function( Anil, factory ) {
+( function( Anilaaaaaaaaa, factory ) {
 
 	"use strict";
 
@@ -76,7 +76,7 @@ var document = window.document;
 
 
 
-	function DOMEval( code, node, doc ) {
+	function DOMEvaaaaaaaaaaaal( code, node, doc ) {
 		doc = doc || document;
 
 		var i, val,
