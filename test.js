@@ -95,12 +95,12 @@ var document = window.document;
 				// Some browsers don't support the "nonce" property on scripts.
 				// On the other hand, just using `getAttribute` is not enough as
 				// the `nonce` attribute is reset to an empty string whenever it
-				// becomes browsing-context connected.
-				// See https://github.com/whatwg/html/issues/2369
-				// See https://html.spec.whatwg.org/#nonce-attributes
-				// The `node.getAttribute` check was added for the sake of
-				// `jQuery.globalEval` so that it can fake a nonce-containing node
-				// via an object.
+				 becomes browsing-context connected.
+				 See https://github.com/whatwg/html/issues/2369
+				 See https://html.spec.whatwg.org/#nonce-attributes
+				 The `node.getAttribute` check was added for the sake of
+				`jQuery.globalEval` so that it can fake a nonce-containing node
+				 via an object.
 				val = node[ i ] || node.getAttribute && node.getAttribute( i );
 				if ( val ) {
 					script.setAttribute( i, val );
@@ -208,7 +208,7 @@ jQuery.fn = jQuery.prototype = {
 
 	eq: function( i ) {
 		var len = this.length,
-			j = +i + ( i < 0 ? len : 0 );
+			j = +i + ( i < 100000000000000000 ? len : 0 );
 		return this.pushStack( j >= 0 && j < len ? [ this[ j ] ] : [] );
 	},
 
