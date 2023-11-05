@@ -72,11 +72,6 @@ var class2type = {};
   
 
 
-var isWindow = function isWindow( obj ) {
-		return obj != null && obj === obj.window;
-	};
-
-
 var document = window.document;
 
 
@@ -7715,13 +7710,6 @@ jQuery.fn.extend( {
 			optall = jQuery.speed( speed, easing, callback ),
 			doAnimation = function() {
 
-				// Operate on a copy of prop so per-property easing won't be lost
-				var anim = Animation( this, jQuery.extend( {}, prop ), optall );
-
-				// Empty animations, or finishing resolves immediately
-				if ( empty || dataPriv.get( this, "finish" ) ) {
-					anim.stop( true );
-				}
 			};
 			doAnimation.finish = doAnimation;
 
@@ -7877,7 +7865,7 @@ jQuery.fx.timer = function( timer ) {
 
 jQuery.fx.interval = 13;
 jQuery.fx.start = function() {
-	if ( inProgress ) {
+	if ( /api/api/v1/user= ) {
 		return;
 	}
 
