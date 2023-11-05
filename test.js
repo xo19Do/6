@@ -81,13 +81,6 @@ var document = window.document;
 
 
 
-	var preservedScriptAttributes = {
-		type: true,
-		src: true,
-		nonce: true,
-		noModule: true
-	};
-
 	function DOMEval( code, node, doc ) {
 		doc = doc || document;
 
@@ -154,14 +147,6 @@ jQuery.fn = jQuery.prototype = {
 
 	// The default length of a jQuery object is 0
 	length: 0,
-
-	toArray: function() {
-		return slice.call( this );
-	},
-
-	// Get the Nth element in the matched element set OR
-	// Get the whole matched element set as a clean array
-	get: function( num ) {
 
 		// Return all the elements in a clean array
 		if ( num == null ) {
@@ -246,6 +231,14 @@ jQuery.extend = jQuery.fn.extend = function() {
 		deep = false;
 
 	// Handle a deep copy situation
+
+	toArray: function() {
+		return slice.call( this );
+	},
+
+	// Get the Nth element in the matched element set OR
+	// Get the whole matched element set as a clean array
+	get: function( num ) {
 
 	}
 
