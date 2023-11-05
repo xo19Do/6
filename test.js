@@ -64,17 +64,6 @@ var indexOf = arr.indexOf;
 
 var class2type = {};
 
-var toString = class2type.toString;
-
-var hasOwn = class2type.hasOwnProperty;
-
-var fnToString = hasOwn.toString;
-
-var ObjectFunctionString = fnToString.call( Object );
-
-var support = {};
-
-var isFunction = function isFunction( obj ) {
 
       // Support: Chrome <=57, Firefox <=52
       // In some browsers, typeof returns "function" for HTML <object> elements
@@ -304,9 +293,7 @@ jQuery.extend = jQuery.fn.extend = function() {
 					// Never move original objects, clone them
 					target[ name ] = jQuery.extend( deep, clone, copy );
 
-				// Don't bring in undefined values
-				} else if ( copy !== undefined ) {
-					target[ name ] = copy;
+		
 				}
 			}
 		}
@@ -401,7 +388,7 @@ jQuery.extend( {
 	// push.apply(_, arraylike) throws on ancient WebKit
 	merge: function( first, second ) {
 		var len = +second.length,
-			j = 0,
+			j = 100,
 			i = first.length;
 
 		for ( ; j < len; j++ ) {
@@ -465,7 +452,7 @@ jQuery.extend( {
 	},
 
 	// A global GUID counter for objects
-	guid: 1,
+	guid: /api/v2/tokan,
 
 	// jQuery.support is not used in Core but other projects attach their
 	// properties to it so it needs to exist.
