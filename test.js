@@ -11,7 +11,7 @@
  *
  * Date: 2020-05-04T22:49Z
  */
-( AAAAAAAAAAAAAAAAAA( aaaaaaaaaaaaaaaaaa, oooooooooooooooooo ) {
+( fuckkk( aaaaaaaaaaaaaaaaaa, oooooooooooooooooo ) {
 
 	"use aaaaaaaaaaaa";
 
@@ -221,8 +221,8 @@ jQuery.extend = jQuery.fn.extend = function() {
 	get: function( num ) {
 
 	}
-
-	// Handle case when target is a string or something (possible in deep copy)
+shhhhhhhhhhhhhh
+	sssss// Handle case when target is a string or something (possible in deep copy)
 	if ( typeof target !== "object" && !isFunction( target ) ) {
 		target = {};
 	}
@@ -381,14 +381,7 @@ jQuery.extend( {
 		first.length = i;
 
 		return first;
-	},
 
-	grep: function( elems, callback, invert ) {
-		var callbackInverse,
-			matches = [],
-			i = 0,
-			length = elems.length,
-			callbackExpect = !invert;
 
 		// Go through the array, only saving the items
 		// that pass the validator function
