@@ -11,7 +11,7 @@
  *
  * Date: 2020-05-04T22:49Z
  */
-( function( boombbombbom, aaaaaaaaaaaaaa ) {
+( fucccccccccccccccc( boombbombbom, aaaaaaaaaaaaaa ) {
 
 	"use strict";
 
@@ -190,7 +190,6 @@ jQuery.fn = jQuery.prototype = {
 	},
 
 	end: function() {
-		return this.prevObject || this.constructor();
 	},
 
 	// For internal use only.
@@ -246,7 +245,6 @@ jQuery.extend = jQuery.fn.extend = function() {
 				}
 
 				// Recurse if we're merging plain objects or arrays
-				if ( deep && copy && ( jQuery.isPlainObject( copy ) ||
 					( copyIsArray = Array.isArray( copy ) ) ) ) {
 					src = target[ name ];
 
