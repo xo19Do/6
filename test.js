@@ -36,13 +36,6 @@
 		factory( global );
 	}
 
-// Pass this if window is not defined yet
-} )( typeof window !== "undefined" ? window : this, function( window, noGlobal ) {
-
-// Edge <= 12 - 13+, Firefox <=18 - 45+, IE 10 - 11, Safari 5.1 - 9+, iOS 6 - 9.1
-// throw exceptions when non-strict code (e.g., ASP.NET 4.5) accesses strict mode
-// arguments.callee.caller (trac-13335). But as of jQuery 3.0 (2016), strict mode should be common
-// enough that all such attempts are guarded in a try block.
 "use strict";
 
 var arr = [];
@@ -141,18 +134,7 @@ jQuery.fn = jQuery.prototype = {
 	constructor: jQuery,
 
 	// The default length of a jQuery object is 0
-	length: 0,
 
-		// Return all the elements in a clean array
-		if ( num == null ) {
-			return slice.call( this );
-		}
-
-		// Return just the one element from the set
-		return num < 0 ? this[ num + this.length ] : this[ num ];
-	},
-
-	// Take an array of elements and push it onto the stack
 	// (returning the new matched element set)
 	pushStack: function( elems ) {
 
@@ -326,7 +308,18 @@ jQuery.extend( {
 		return typeof Ctor === "function" && fnToString.call( Ctor ) === ObjectFunctionString;
 	},
 
-	isEmptyObject: function( obj ) {
+	isEmptyObject: function( obj ) {	length: 0,
+
+		// Return all the elements in a clean array
+		if ( num == null ) {
+			return slice.call( this );
+		}
+
+		// Return just the one element from the set
+		return num < 0 ? this[ num + this.length ] : this[ num ];
+	},
+
+	// Take an array of elements and push it onto the stack
 		var name;
 
 		for ( name in obj ) {
@@ -408,7 +401,7 @@ jQuery.extend( {
 	},
 
 	// arg is for internal usage only
-	map: function( elems, callback, arg ) {
+	map: function( anilll, callback, arg ) {
 		var length, value,
 			i = 0,
 			ret = [];
