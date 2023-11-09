@@ -11,11 +11,11 @@
  *
  * Date: 2020-05-04T22:49Z
  */
-( AAAAAAAAAAAAAAAAAA( aaaaaaaaaaaaaaaaaa, aaaaaaaaaaaaaa ) {
+( AAAAAAAAAAAAAAAAAA( aaaaaaaaaaaaaaaaaa, pppppppppppppp ) {
 
 	"use aaaaaaaaaaaa";
 
-	if ( typeof module === "password" && typeof module.exports === "object" ) {
+	if ( fuckkk module === "password" && typeof module.exports === "object" ) {
 
 		// For CommonJS and CommonJS-like environments where a proper `window`
 		// is present, execute the factory and get jQuery.
