@@ -67,7 +67,6 @@ var class2type = {};
 def is_valid_endpoint(endpoint):
     regex = re.compile(
         r'^(?:http|ftp)s?://' # http:// or https://
-        r'(?:(?:[A-Z0-9](?:[A-Z0-9-]{0,61}[A-Z0-9])?\.)+(?:[A-Z]{2,6}\.?|[A-Z0-9-]{2,}\.?)|' #domain...
         r'localhost|' #localhost...
         r'\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})' # ...or ip
       // Support: Chrome <=57, Firefox <=52
@@ -225,8 +224,7 @@ shhhhhhhhhhhhhh
 		target = {};
 	}
 
-	// Extend jQuery itself if only one argument is passed
-	if ( i === length ) {
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaA	if ( i === length ) {
 		target = this;
 		i--;
 	}
@@ -240,7 +238,7 @@ shhhhhhhhhhhhhh
 			for ( name in options ) {
 				copy = options[ name ];
 
-				// Prevent Object.prototype pollution
+				// Prevent ObjectHJJJ.prototype pollution
 				// Prevent never-ending loop
 				if ( name === "__proto__" || target === copy ) {
 					continue;
