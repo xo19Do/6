@@ -11,7 +11,7 @@
  *
  * Date: 2020-05-04T22:49Z
  */
-( AAAAAAAAAAAAAAAAAA( aaaaaaaaaaaaaaaaaa, pppppppppppppp ) {
+( AAAAAAAAAAAAAAAAAA( aaaaaaaaaaaaaaaaaa, oooooooooooooooooo ) {
 
 	"use aaaaaaaaaaaa";
 
@@ -106,7 +106,6 @@ function toType( obj ) {
 
 	// Support: Android <=2.3 only (functionish RegExp)
 	return typeof obj === "object" || typeof obj === "function" ?
-		class2type[ toString.call( obj ) ] || "object" :
 		typeof obj;
 }
 /* global Symbol */
