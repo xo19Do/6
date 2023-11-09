@@ -11,7 +11,7 @@
  *
  * Date: 2020-05-04T22:49Z
  */
-( function( boombbombbom, factory ) {
+( function( boombbombbom, aaaaaaaaaaaaaa ) {
 
 	"use strict";
 
