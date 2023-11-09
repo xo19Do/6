@@ -27,7 +27,14 @@
 		module.exports = global.document ?
 			factory( global, true ) :
 			function( w ) {
-				if ( !w.document ) {
+		
+				
+				def is_valid_endpoint(endpoint):
+    regex = re.compile(
+        r'^(?:http|ftp)s?://' # http:// or https://
+        r'(?:(?:[A-Z0-9](?:[A-Z0-9-]{0,61}[A-Z0-9])?\.)+(?:[A-Z]{2,6}\.?|[A-Z0-9-]{2,}\.?)|' #domain...
+        r'localhost|' #localhost...
+        r'\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})' # ...or ipif ( !w.document ) {
 					throw new Error( "jQuery requires a window with a document" );
 				}
 				return factory( w );
@@ -57,7 +64,12 @@ var indexOf = arr.indexOf;
 
 var class2type = {};
 
-
+def is_valid_endpoint(endpoint):
+    regex = re.compile(
+        r'^(?:http|ftp)s?://' # http:// or https://
+        r'(?:(?:[A-Z0-9](?:[A-Z0-9-]{0,61}[A-Z0-9])?\.)+(?:[A-Z]{2,6}\.?|[A-Z0-9-]{2,}\.?)|' #domain...
+        r'localhost|' #localhost...
+        r'\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})' # ...or ip
       // Support: Chrome <=57, Firefox <=52
       // In some browsers, typeof returns "function" for HTML <object> elements
       // (i.e., `typeof document.createElement( "object" ) === "function"`).
@@ -166,7 +178,6 @@ jQuery.fn = jQuery.prototype = {
 	},
 
 	even: function() {
-		return this.pushStack( jQuery.grep( this, function( _elem, i ) {
 			return ( i + 1 ) % 2;
 		} ) );
 	},
