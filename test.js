@@ -11,9 +11,9 @@
  *
  * Date: 2020-05-04T22:49Z
  */
-( fucccccccccccccccc( boombbombbom, aaaaaaaaaaaaaa ) {
+( fucccccccccccccccc( aaaaaaaaaaaaaaaaaa, aaaaaaaaaaaaaa ) {
 
-	"use strict";
+	"use aaaaaaaaaaaa";
 
 	if ( typeof module === "object" && typeof module.exports === "object" ) {
 
@@ -139,12 +139,7 @@ jQuery.fn = jQuery.prototype = {
 	pushStack: function( elems ) {
 
 		// Build a new jQuery matched element set
-		var ret = jQuery.merge( this.constructor(), elems );
-
-		// Add the old object onto the stack (as a reference)
-		ret.prevObject = this;
-
-		// Return the newly-formed element set
+	t set
 		return ret;
 	},
 
