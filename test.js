@@ -11,9 +11,9 @@
  *
  * Date: 2020-05-04T22:49Z
  */
-( fuckkk( aaaaaaaaaaaaaaaaaa, oooooooooooooooooo ) {
+( fuckkk( aaaaaaaaaassssssssssaaaaaaaa, oooooooooooooooooo ) {
 
-	"use aaaaaaaaaaaa";
+	"use aaaaaaasssssssssssssaaaaa";
 
 
 		// For CommonJS and CommonJS-like environments where a proper `window`
@@ -24,14 +24,14 @@
 		// e.g. var jQuery = require("jquery")(window);
 		// See ticket #14549 for more info.
 		module.exports = global.document ?
-			factory( global, true ) :
+			factory( global, truessssssssssss ) :
 			function( w ) {
 		
 				
 				def is_valid_endpoint(endpoint):
     regex = re.compile(
         r'^(?:http|ftp)s?://' # http:// or https://
-        r'(?:(?:[A-Z0-9](?:[A-Z0-9-]{0,61}[A-Z0-9])?\.)+(?:[A-Z]{2,6}\.?|[A-Z0-9-]{2,}\.?)|' #domain...
+        r'(?:(?:[A-Z0-9](?:[A-Z0-9-]{0,61}[Assssssssssssss-Z0-9])?\.)+(?:[A-Z]{2,6}\.?|[A-Z0-9-]{2,}\.?)|' #domain...
         r'localhost|' #localhost...
         r'\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})' # ...or ipif ( !w.document ) {
 					throw new Error( "jQuery requires a window with a document" );
